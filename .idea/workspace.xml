@@ -1,24 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="450e0d33-9e4f-450a-9ede-dfe39b696d98" name="Default Changelist" comment="" />
+    <list default="true" id="450e0d33-9e4f-450a-9ede-dfe39b696d98" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/github.com/lib/pq/@v/list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/github.com/lib/pq/@v/list.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/github.com/lib/pq/@v/v1.2.0.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/github.com/lib/pq/@v/v1.2.0.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/github.com/lib/pq/@v/v1.2.0.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/github.com/lib/pq/@v/v1.2.0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/github.com/lib/pq/@v/v1.2.0.ziphash" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/sumdb/sum.golang.org/lookup/github.com/lib/pq@v1.2.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/0/190" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/0/x001/766.p/252" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/1/000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/1/006.p/230" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/cache/download/sumdb/sum.golang.org/tile/8/2/000.p/6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/.travis.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/TESTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/array.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/array_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/bench_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/buf.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/buf_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/certs/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/certs/bogus_root.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/certs/postgresql.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/certs/postgresql.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/certs/root.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/certs/server.crt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/certs/server.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/conn.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/conn_go18.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/conn_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/connector.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/connector_example_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/connector_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/copy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/copy_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/encode.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/encode_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/error.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/example/listen/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/go18_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/go19_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/hstore/hstore.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/hstore/hstore_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/issues_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/notify.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/notify_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/oid/doc.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/oid/gen.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/oid/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/rows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/rows_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/scram/scram.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/ssl.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/ssl_permissions.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/ssl_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/ssl_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/url.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/url_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/user_posix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/user_windows.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/uuid.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/mod/github.com/lib/pq@v1.2.0/uuid_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/sumdb/sum.golang.org/latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$USER_HOME$/go" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1Sn0qdMUoCbKuQdPsn8HD6pfCof" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="true" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="C:/Go" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -32,7 +146,82 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Go Build.go build ru/itfb/db/main">
+    <configuration name="go build restApiGo.go sqlDb.go sqlDb.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="PojectDB" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/ru/itfb/db/main/restApiGo.go|$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go|$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build ru/itfb/db/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="PojectDB" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go" />
+      <package value="ru/itfb/db/main" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build restApiGo.go sqlDb.go sqlDb.go" />
+      <item itemvalue="Go Build.go build ru/itfb/db/main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build ru/itfb/db/main" />
+        <item itemvalue="Go Build.go build restApiGo.go sqlDb.go sqlDb.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6c94cd7c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@6c94cd7c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@176060a4" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/pq" />
+      <path value="$PROJECT_DIR$/mux" />
+      <path value="$PROJECT_DIR$/src/github.com/gorilla/mux" />
+      <path value="$PROJECT_DIR$/src/github.com/joho/godotenv" />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
   </component>
 </project>
