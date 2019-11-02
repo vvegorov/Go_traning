@@ -132,7 +132,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -146,16 +146,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build ru/itfb/db/main">
-    <configuration name="go build restApiGo.go sqlDb.go sqlDb.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="PojectDB" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/src/ru/itfb/db/main/restApiGo.go|$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go|$PROJECT_DIR$/src/ru/itfb/db/main/sqlDb.go" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build ru/itfb/db/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="go build modulename" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="PojectDB" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
@@ -164,14 +156,9 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Go Build.go build restApiGo.go sqlDb.go sqlDb.go" />
-      <item itemvalue="Go Build.go build ru/itfb/db/main" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build ru/itfb/db/main" />
-        <item itemvalue="Go Build.go build restApiGo.go sqlDb.go sqlDb.go" />
+        <item itemvalue="Go Build.go build modulename" />
       </list>
     </recent_temporary>
   </component>

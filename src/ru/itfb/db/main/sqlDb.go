@@ -7,103 +7,166 @@ import (
 	"github.com/gorilla/mux"
 	_ "github.com/lib/pq"
 	"log"
+	"math/rand"
 	"net/http"
-
-
+	"strconv"
 )
 
-type UserTest struct {
-	id   int
-	name string
-}
 var db *sql.DB
+var target []UserTest
+
+type UserTest struct {
+	Id   int
+	Name string
+}
+
 //var rows *sql.Rows
 
 func main() {
 
-	//Устанавливаем соединение GO_Train_first
+	router := mux.NewRouter()
+	buildBlockRoutes(router)
+
+	log.Fatal(http.ListenAndServe(":8000", router))
+
+}
+
+func buildBlockRoutes(router *mux.Router) {
+	prefix := "/books"
+	router.HandleFunc(prefix, GetInfo).Methods("GET")
+	router.HandleFunc(prefix+"/{id}", GetListById).Methods("GET")
+	router.HandleFunc(prefix, AddUserTest).Methods("POST")
+
+}
+
+func GetListById(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	//Converts the id parameter from a string to an int
+	id, err := strconv.Atoi(mux.Vars(r)["id"])
+	if err == nil {
+		log.Println("Get info about id #", id)
+
+		db := InitDB()
+		defer db.Close()
+
+		target := SqlQueryId(id, db)
+		k := target[0]
+		fmt.Println(k)
+
+		json.NewEncoder(w).Encode(target)
+
+	} else {
+		log.Fatal(err.Error())
+	}
+
+}
+
+func GetInfo(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	db := InitDB()
+	defer db.Close()
+
+	target := SqlQueryAll(db)
+
+	json.NewEncoder(w).Encode(target)
+}
+
+func AddUserTest(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	var userT UserTest
+	var x int
+	_ = json.NewDecoder(r.Body).Decode(&userT)
+	// x += 1
+	x = rand.Intn(1000000)
+	userT.Id = x
+
+	db := InitDB()
+	defer db.Close()
+
+	SqlAddUserTest(userT, db)
+
+	json.NewEncoder(w).Encode(userT)
+}
+
+func InitDB() *sql.DB {
 	connStr := "user=egorovvv password=12345 dbname=GO_Train_first sslmode=disable"
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
 		panic(err)
 	}
-	defer db.Close()
 
-	//Устанавливаем соединение GO_Train_target
-	/*connStr1 := "user=egorovvv password=12345 dbname=GO_Train_target sslmode=disable"
-	db_tg, err_tg := sql.Open("postgres", connStr1)
-	if err_tg != nil {
-		panic(err_tg)
-	}
-	defer db_tg.Close()*/
-
-	/*rows, err := db.Query("select * from public.contact")
-	if err != nil {
-		panic(err)
-	}
-	defer rows.Close()
-	contacts := []UserTest{}
-
-	// Добавляем с slice набор из таблицы public.contact
-	for rows.Next() {
-		p := UserTest{}
-		err := rows.Scan(&p.id, &p.name)
-		if err != nil {
-			fmt.Println(err)
-			continue
-		}
-		contacts = append(contacts, p)
-	}
-
-	// Вывод содержимого таблицы public.contact из GO_Train_first
-	for _, p := range contacts {
-		fmt.Println(p.id, p.name)
-	}
-
-	for _, p := range contacts {
-
-		result, err := db_tg.Exec("insert into public.contact_target(id, name) VALUES ($1, $2)",
-			p.id, p.name)
-		if err != nil {
-			panic(err)
-			continue
-		}
-
-		fmt.Println(result.RowsAffected())
-
-	}*/
-
-	r := mux.NewRouter()
-	r.HandleFunc("/books/{id}", getList).Methods("GET")
-
-	log.Fatal(http.ListenAndServe(":8000", r))
-
+	return db
 
 }
 
-func getList(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Content-Type", "application/json")
-	params := mux.Vars(r)
+func SqlQueryId(id int, db *sql.DB) []UserTest {
 
-	rows, err := db.Query("select * from public.contact where id=$1", params["id"] )
+	rows, err := db.Query(`SELECT id, name FROM public.contact where id=$1`, id)
+
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
+
 	defer rows.Close()
 
-	contacts := []UserTest{}
-
+	var contacts = make([]UserTest, 0)
+	var p UserTest
 	// Добавляем с slice набор из таблицы public.contact
 	for rows.Next() {
-		p := UserTest{}
-		err := rows.Scan(&p.id, &p.name)
+
+		err := rows.Scan(&p.Id, &p.Name)
 		if err != nil {
-			fmt.Println(err)
-			continue
+			log.Fatal(err)
 		}
 		contacts = append(contacts, p)
 	}
 
+	if err := rows.Err(); err != nil {
+		log.Fatal(err)
+	}
 
-	json.NewEncoder(w).Encode(contacts)
+	return contacts
+}
+
+func SqlQueryAll(db *sql.DB) []UserTest {
+
+	rows, err := db.Query(`SELECT id, name FROM public.contact`)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	defer rows.Close()
+
+	var contacts = make([]UserTest, 0)
+	var p UserTest
+	// Добавляем с slice набор из таблицы public.contact
+	for rows.Next() {
+
+		err := rows.Scan(&p.Id, &p.Name)
+		if err != nil {
+			log.Fatal(err)
+		}
+		contacts = append(contacts, p)
+	}
+
+	if err := rows.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+	return contacts
+}
+
+func SqlAddUserTest(p UserTest, db *sql.DB) {
+
+	result, err := db.Exec("insert into public.contact(id, name) VALUES ($1, $2)",
+		p.Id, p.Name)
+	if err != nil {
+		panic(err)
+
+	}
+
+	fmt.Println(result.RowsAffected())
+
 }
